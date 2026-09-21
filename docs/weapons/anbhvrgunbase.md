@@ -20,7 +20,7 @@ Hook
 :   Postfix
 
 We use it to
-:   Play recoil on the hand holding the gun. It counts as two-handed if the other hand holds a second grip point (foregrip, rail). Shotguns and automatic rifles get their own feel. Enemy guns and bows are skipped.
+:   Play recoil on the hand holding the gun. It counts as two-handed if the other hand holds a second grip point (foregrip, rail).
 
 Not used
 :   `direction`

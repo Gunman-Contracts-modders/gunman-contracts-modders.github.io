@@ -4,9 +4,8 @@ description: Trigger box for challenges. On contract boxes it runs a countdown, 
 
 # ANBChallengeTriggerbox
 
-The weirdly named ChallengeTriggerBox is what in game is called "Rook", and it's the huge bomb at the end of contract 1 and in the middle of contract 2,
-the same class is used for both. It runs a countdown, which we treat as a bomb timer. The three hooks work together: `startCounting` starts it, `ButtonPushed`
-stops it, and `Update` watches the time left.
+The weirdly named ChallengeTriggerBox is what in game is called "Rook", and it's the huge bomb at the end of contract 1 and in the middle of contract 3,
+the same class is used for both.
 
 ## Functions
 
