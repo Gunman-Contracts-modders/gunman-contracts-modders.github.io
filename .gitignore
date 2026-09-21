@@ -2,3 +2,4 @@ site/
 .cache/
 __pycache__/
 .vs/
+/.vs/slnx.sqlite
