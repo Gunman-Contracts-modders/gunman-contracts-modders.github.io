@@ -1,0 +1,68 @@
+site_name: Gunman Contracts Modding Notes
+site_description: Community notes on the functions found in Gunman Contracts Standalone and when they are triggered.
+# TODO: replace YOUR-ORG (and the repo name, if you pick another one)
+site_url: https://YOUR-ORG.github.io/gunman-contracts-docs/
+repo_url: https://github.com/YOUR-ORG/gunman-contracts-docs
+edit_uri: edit/main/docs/
+
+# No nav: pages are picked up from the folder structure automatically.
+# A new folder in docs/ becomes a new section; nobody has to edit this file.
+
+theme:
+  name: material
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+
+plugins:
+  - search
+  - macros
+  # Bundles the web fonts into the site so visitors' browsers never contact Google.
+  # Only active in CI, because it needs to download the fonts during the build.
+  - privacy:
+      enabled: !ENV [CI, false]
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      base_path: ["."]
+      check_paths: true
+
+extra_css:
+  - stylesheets/extra.css

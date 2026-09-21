@@ -1,0 +1,183 @@
+/* Gunman Contracts modding notes - theme
+   Petrol header, amber marks the "when is it triggered" row.
+   Identifiers (function names, variables) are set in the mono face. */
+
+/* ---------- Colour tokens ---------- */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #0f4c5c;
+  --md-primary-fg-color--light: #3e7684;
+  --md-primary-fg-color--dark: #0a3540;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: rgba(255, 255, 255, 0.72);
+  --md-accent-fg-color: #a15c00;
+
+  --md-default-bg-color: #f6f7f5;
+  --md-default-fg-color: #1d2329;
+  --md-default-fg-color--light: #4a555e;
+  --md-default-fg-color--lighter: #8a949b;
+  --md-default-fg-color--lightest: #d5dad9;
+  --md-typeset-color: #1d2329;
+  --md-typeset-a-color: #0f5c70;
+
+  --md-code-bg-color: #e8ecea;
+  --md-code-fg-color: #17323a;
+
+  --gc-mark: #d99a1e;
+  --gc-rule: #d5dad9;
+  --gc-table-head: #eaeeec;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #123f4b;
+  --md-primary-fg-color--light: #3e7684;
+  --md-primary-fg-color--dark: #0c2f38;
+  --md-primary-bg-color: #eef4f5;
+  --md-primary-bg-color--light: rgba(238, 244, 245, 0.7);
+  --md-accent-fg-color: #f0b44c;
+
+  --md-default-bg-color: #12181c;
+  --md-default-fg-color: #dce3e6;
+  --md-default-fg-color--light: #a3b0b6;
+  --md-default-fg-color--lighter: #6f7c83;
+  --md-default-fg-color--lightest: #2a353b;
+  --md-typeset-color: #dce3e6;
+  --md-typeset-a-color: #6cc1d3;
+
+  --md-code-bg-color: #1b242a;
+  --md-code-fg-color: #cfe3e8;
+
+  --md-footer-bg-color: #0d1215;
+  --md-footer-bg-color--dark: #0a0f11;
+
+  --gc-mark: #f0b44c;
+  --gc-rule: #2a353b;
+  --gc-table-head: #1b242a;
+}
+
+/* ---------- Type ---------- */
+.md-typeset {
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+.md-typeset h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: -0.015em;
+  color: var(--md-default-fg-color);
+  margin-bottom: 1rem;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: -0.005em;
+  margin: 2.6rem 0 1rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--gc-rule);
+}
+
+/* Function names are identifiers: mono, no code-chip background. */
+.md-typeset h3 {
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0;
+  margin: 2rem 0 0.4rem;
+}
+.md-typeset h3 code,
+.md-typeset h1 code,
+.md-typeset h2 code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+/* The signature line right below a function name */
+.md-typeset h3 + p {
+  margin-top: 0;
+}
+.md-typeset h3 + p > code {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  border-radius: 2px;
+  font-size: 0.78rem;
+}
+
+/* ---------- Function facts ---------- */
+/* Term on the left, answer on the right. The first row is always
+   "Triggered when", so it carries the amber mark. */
+.md-typeset dl {
+  display: grid;
+  grid-template-columns: minmax(7.5rem, max-content) 1fr;
+  column-gap: 1.5rem;
+  margin: 1.1rem 0 1.6rem;
+  border-top: 1px solid var(--gc-rule);
+}
+.md-typeset dl > dt,
+.md-typeset dl > dd {
+  margin: 0;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--gc-rule);
+}
+.md-typeset dl > dt {
+  grid-column: 1;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--md-default-fg-color--light);
+}
+.md-typeset dl > dd {
+  grid-column: 2;
+}
+.md-typeset dl > dt:first-of-type {
+  color: var(--md-default-fg-color);
+  padding-left: 0.75rem;
+  box-shadow: inset 3px 0 0 var(--gc-mark);
+}
+.md-typeset dl > dd:first-of-type {
+  font-weight: 500;
+}
+
+/* ---------- Variable tables ---------- */
+.md-typeset table:not([class]) {
+  font-size: 0.76rem;
+  box-shadow: none;
+  border: 1px solid var(--gc-rule);
+  border-radius: 2px;
+}
+.md-typeset table:not([class]) th {
+  background: var(--gc-table-head);
+  font-weight: 600;
+  color: var(--md-default-fg-color);
+  padding: 0.6rem 0.9rem;
+}
+.md-typeset table:not([class]) td {
+  padding: 0.6rem 0.9rem;
+  border-top: 1px solid var(--gc-rule);
+  vertical-align: top;
+}
+.md-typeset table:not([class]) tbody tr:hover {
+  background: var(--gc-table-head);
+}
+.md-typeset table:not([class]) td:first-child code {
+  white-space: nowrap;
+}
+
+/* ---------- Small screens ---------- */
+@media screen and (max-width: 44.9375em) {
+  .md-typeset h1 { font-size: 1.6rem; }
+  .md-typeset dl {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+  .md-typeset dl > dt {
+    grid-column: 1;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  .md-typeset dl > dd {
+    grid-column: 1;
+    padding-top: 0.15rem;
+  }
+}
