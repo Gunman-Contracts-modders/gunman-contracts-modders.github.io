@@ -168,18 +168,6 @@ Hook
 We use it to
 :   Play the big explosion effect.
 
-### `CheckForCheats`
-
-`bool CheckForCheats()`
-
-Triggered when
-:   The game checks whether cheats are active.
-
-Hook
-:   Postfix, changes the return value.
-
-We use it to
-:   Set the result to true if any of the six cheat flags is on, otherwise to false.
 
 ## Variables
 
@@ -188,10 +176,3 @@ We use it to
 | `attacker` | `ANBBasicNPC` | The NPC that hurt the player. Empty if there is none. | `HurtPlayer` |
 | `attacker.transform.position` | `Vector3` | Where the attacker stands. Gives the hit direction. | `HurtPlayer` |
 | `side` | `string` | Holster slot. We check for `right`, `backRight` and `backLeft`; anything else counts as the left hip. | `holsterGun`, `unholsterGun`, `holsterKnife`, `unholsterKnife` |
-| `CheatGod` | `bool` | Cheat flag: god mode. | `CheckForCheats` |
-| `CheatGunsDontKill` | `bool` | Cheat flag: guns don't kill. | `CheckForCheats` |
-| `CheatInfititeLastHP` | `bool` | Cheat flag: infinite last HP. Spelled like this in the game. | `CheckForCheats` |
-| `CheatInvisible` | `bool` | Cheat flag: invisible. | `CheckForCheats` |
-| `CheatSlowmotion` | `bool` | Cheat flag: slow motion. | `CheckForCheats` |
-| `CheatUnlimitedMag` | `bool` | Cheat flag: unlimited magazine. | `CheckForCheats` |
-| `__result` | `bool` | The return value of `CheckForCheats`, which the hook overwrites. | `CheckForCheats` |
