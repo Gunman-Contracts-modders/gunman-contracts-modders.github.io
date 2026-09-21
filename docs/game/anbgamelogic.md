@@ -1,0 +1,197 @@
+---
+description: The game's central logic. Damage, death, holsters, ammo and pickups run through it.
+---
+
+# ANBGameLogic
+
+The game's central logic class. Many of the events a mod cares about (getting hurt,
+dying, holstering, ammo, pickups) run through it. Check here first.
+
+## Functions
+
+### `HurtPlayer`
+
+`HurtPlayer(string type, float dmg, ANBBasicNPC attacker)`
+
+Triggered when
+:   The player is hurt. `attacker` is the NPC that did it, or empty.
+
+Hook
+:   Postfix
+
+We use it to
+:   Play an impact effect from the direction of the attacker, seen from the player's camera. Skipped when there is no attacker.
+
+Not used
+:   `type`, `dmg`
+
+### `PlayerDeadCall`
+
+`PlayerDeadCall()`
+
+Triggered when
+:   The player dies.
+
+Hook
+:   Postfix
+
+We use it to
+:   Stop the heartbeat effect.
+
+### `endRun`
+
+`endRun()`
+
+Triggered when
+:   A run ends.
+
+Hook
+:   Postfix
+
+We use it to
+:   Stop the heartbeat effect.
+
+### `holsterGun`
+
+`holsterGun(string side)`
+
+Triggered when
+:   A gun is put into a holster.
+
+Hook
+:   Postfix
+
+We use it to
+:   Play the holster-in effect on the matching side, hip or back.
+
+### `unholsterGun`
+
+`unholsterGun(string side)`
+
+Triggered when
+:   A gun is drawn from a holster.
+
+Hook
+:   Postfix
+
+We use it to
+:   Play the holster-out effect on the matching side, hip or back.
+
+### `holsterKnife`
+
+`holsterKnife(string side)`
+
+Triggered when
+:   A knife is put into a holster.
+
+Hook
+:   Postfix
+
+We use it to
+:   Play the holster-in effect on the matching side, hip or back.
+
+### `unholsterKnife`
+
+`unholsterKnife(string side)`
+
+Triggered when
+:   A knife is drawn from a holster.
+
+Hook
+:   Postfix
+
+We use it to
+:   Play the holster-out effect on the matching side, hip or back.
+
+### `creditAmmo`
+
+`creditAmmo()`
+
+Triggered when
+:   Ammo is credited to the player.
+
+Hook
+:   Postfix
+
+We use it to
+:   Play the ammo pouch effect.
+
+### `substractAmmo`
+
+`substractAmmo()`
+
+Triggered when
+:   Ammo is taken from the player. The name is spelled like this in the game.
+
+Hook
+:   Postfix
+
+We use it to
+:   Play the ammo pouch effect.
+
+### `collectibleCollected`
+
+`collectibleCollected()`
+
+Triggered when
+:   A collectible is picked up.
+
+Hook
+:   Postfix
+
+We use it to
+:   Play the ammo pouch effect.
+
+### `collectCoinWallet`
+
+`collectCoinWallet()`
+
+Triggered when
+:   Coins are collected into the wallet.
+
+Hook
+:   Postfix
+
+We use it to
+:   Play the ammo pouch effect.
+
+### `DeathByRook`
+
+`DeathByRook()`
+
+Triggered when
+:   The player is killed by a "Rook", as the function is named.
+
+Hook
+:   Postfix
+
+We use it to
+:   Play the big explosion effect.
+
+### `CheckForCheats`
+
+`bool CheckForCheats()`
+
+Triggered when
+:   The game checks whether cheats are active.
+
+Hook
+:   Postfix, changes the return value.
+
+We use it to
+:   Set the result to true if any of the six cheat flags is on, otherwise to false.
+
+## Variables
+
+| Variable | Type | Meaning | Function |
+|---|---|---|---|
+| `attacker` | `ANBBasicNPC` | The NPC that hurt the player. Empty if there is none. | `HurtPlayer` |
+| `attacker.transform.position` | `Vector3` | Where the attacker stands. Gives the hit direction. | `HurtPlayer` |
+| `side` | `string` | Holster slot. We check for `right`, `backRight` and `backLeft`; anything else counts as the left hip. | `holsterGun`, `unholsterGun`, `holsterKnife`, `unholsterKnife` |
+| `CheatGod` | `bool` | Cheat flag: god mode. | `CheckForCheats` |
+| `CheatGunsDontKill` | `bool` | Cheat flag: guns don't kill. | `CheckForCheats` |
+| `CheatInfititeLastHP` | `bool` | Cheat flag: infinite last HP. Spelled like this in the game. | `CheckForCheats` |
+| `CheatInvisible` | `bool` | Cheat flag: invisible. | `CheckForCheats` |
+| `CheatSlowmotion` | `bool` | Cheat flag: slow motion. | `CheckForCheats` |
+| `CheatUnlimitedMag` | `bool` | Cheat flag: unlimited magazine. | `CheckForCheats` |
+| `__result` | `bool` | The return value of `CheckForCheats`, which the hook overwrites. | `CheckForCheats` |

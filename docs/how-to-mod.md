@@ -12,9 +12,9 @@ Follow the instructions on the [MelonLoader wiki](https://melonwiki.xyz). They w
 
 For a working example that hooks game functions with Harmony, see the [bHaptics mod for this game](https://github.com/floh-bhaptics/GunmanContracts_bhaptics).
 
-## 3. Look in HurricaneVR first
+## 3. Look in ANBGameLogic
 
-Most of the functions you will want to hook are not in the game's own code but in the **HurricaneVR** framework, the VR toolkit the game is built on. It handles grabbing, guns and bows. In mod code its namespaces get an `Il2Cpp` prefix (`Il2CppHurricaneVR...`), in a decompiler they don't.
+Many, many valuable functions are in the game's own `ANBGameLogic` class: getting hurt, dying, holstering, ammo, pickups and more. The hooks in the example mod above show how much is in there. See the [ANBGameLogic page](game/anbgamelogic.md) for the list.
 
 ## 4. Read the libraries
 
