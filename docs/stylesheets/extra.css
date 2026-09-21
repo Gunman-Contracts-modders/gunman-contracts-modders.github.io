@@ -1,57 +1,135 @@
 /* Gunman Contracts modding notes - theme
-   Petrol header, amber marks the "when is it triggered" row.
-   Identifiers (function names, variables) are set in the mono face. */
+   Dark charcoal with the cover's yellow. Yellow marks what matters:
+   links, and the "Triggered when" row on every function.
+   Headings are condensed like the cover title; identifiers are mono.
+   All fonts are self-hosted (docs/fonts), nothing is loaded from third parties. */
 
-/* ---------- Colour tokens ---------- */
-[data-md-color-scheme="default"] {
-  --md-primary-fg-color: #0f4c5c;
-  --md-primary-fg-color--light: #3e7684;
-  --md-primary-fg-color--dark: #0a3540;
-  --md-primary-bg-color: #ffffff;
-  --md-primary-bg-color--light: rgba(255, 255, 255, 0.72);
-  --md-accent-fg-color: #a15c00;
-
-  --md-default-bg-color: #f6f7f5;
-  --md-default-fg-color: #1d2329;
-  --md-default-fg-color--light: #4a555e;
-  --md-default-fg-color--lighter: #8a949b;
-  --md-default-fg-color--lightest: #d5dad9;
-  --md-typeset-color: #1d2329;
-  --md-typeset-a-color: #0f5c70;
-
-  --md-code-bg-color: #e8ecea;
-  --md-code-fg-color: #17323a;
-
-  --gc-mark: #d99a1e;
-  --gc-rule: #d5dad9;
-  --gc-table-head: #eaeeec;
+/* ---------- Fonts ---------- */
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-sans-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-sans-latin-400-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-sans-latin-500-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-weight: 600 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-sans-latin-600-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-weight: 500 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ibm-plex-mono-latin-500-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/barlow-condensed-latin-600-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Barlow Condensed";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/barlow-condensed-latin-700-normal.woff2") format("woff2");
 }
 
+:root {
+  --md-text-font: "IBM Plex Sans";
+  --md-code-font: "IBM Plex Mono";
+  --gc-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+}
+
+/* ---------- Colour tokens ---------- */
+/* Dark is the default, like the game's cover. */
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #123f4b;
-  --md-primary-fg-color--light: #3e7684;
-  --md-primary-fg-color--dark: #0c2f38;
-  --md-primary-bg-color: #eef4f5;
-  --md-primary-bg-color--light: rgba(238, 244, 245, 0.7);
-  --md-accent-fg-color: #f0b44c;
+  --md-primary-fg-color: #0e1214;
+  --md-primary-fg-color--light: #2b3437;
+  --md-primary-fg-color--dark: #090c0d;
+  --md-primary-bg-color: #f0f2f1;
+  --md-primary-bg-color--light: rgba(240, 242, 241, 0.7);
+  --md-accent-fg-color: #ffd25e;
 
-  --md-default-bg-color: #12181c;
-  --md-default-fg-color: #dce3e6;
-  --md-default-fg-color--light: #a3b0b6;
-  --md-default-fg-color--lighter: #6f7c83;
-  --md-default-fg-color--lightest: #2a353b;
-  --md-typeset-color: #dce3e6;
-  --md-typeset-a-color: #6cc1d3;
+  --md-default-bg-color: #171c1e;
+  --md-default-fg-color: #e6e9e8;
+  --md-default-fg-color--light: #a8b2b4;
+  --md-default-fg-color--lighter: #6e7a7d;
+  --md-default-fg-color--lightest: #2b3437;
+  --md-typeset-color: #e6e9e8;
+  --md-typeset-a-color: #f5b921;
 
-  --md-code-bg-color: #1b242a;
-  --md-code-fg-color: #cfe3e8;
+  --md-code-bg-color: #1f2629;
+  --md-code-fg-color: #f0dda0;
 
-  --md-footer-bg-color: #0d1215;
-  --md-footer-bg-color--dark: #0a0f11;
+  --md-footer-bg-color: #0e1214;
+  --md-footer-bg-color--dark: #090c0d;
 
-  --gc-mark: #f0b44c;
-  --gc-rule: #2a353b;
-  --gc-table-head: #1b242a;
+  --gc-mark: #f5b921;
+  --gc-rule: #2b3437;
+  --gc-table-head: #1f2629;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #1c2224;
+  --md-primary-fg-color--light: #4a5457;
+  --md-primary-fg-color--dark: #12171a;
+  --md-primary-bg-color: #f0f2f1;
+  --md-primary-bg-color--light: rgba(240, 242, 241, 0.7);
+  --md-accent-fg-color: #8c5c00;
+
+  --md-default-bg-color: #f3f3ef;
+  --md-default-fg-color: #1b2123;
+  --md-default-fg-color--light: #4a5457;
+  --md-default-fg-color--lighter: #8b9497;
+  --md-default-fg-color--lightest: #d8d8d0;
+  --md-typeset-color: #1b2123;
+  --md-typeset-a-color: #7a5800;
+
+  --md-code-bg-color: #e7e7e1;
+  --md-code-fg-color: #2e2a17;
+
+  --gc-mark: #e8a812;
+  --gc-rule: #d8d8d0;
+  --gc-table-head: #e9e9e2;
+}
+
+/* ---------- Header ---------- */
+.md-header {
+  box-shadow: 0 2px 0 var(--gc-mark);
+}
+.md-header__title {
+  font-family: var(--gc-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
 }
 
 /* ---------- Type ---------- */
@@ -61,32 +139,36 @@
 }
 
 .md-typeset h1 {
-  font-weight: 600;
-  font-size: 2rem;
-  letter-spacing: -0.015em;
+  font-family: var(--gc-display);
+  font-weight: 700;
+  font-size: 2.7rem;
+  line-height: 1.05;
+  letter-spacing: 0.005em;
   color: var(--md-default-fg-color);
-  margin-bottom: 1rem;
+  margin: 0 0 1.2rem;
 }
 
 .md-typeset h2 {
+  font-family: var(--gc-display);
   font-weight: 600;
-  font-size: 1.25rem;
-  letter-spacing: -0.005em;
-  margin: 2.6rem 0 1rem;
-  padding-top: 1.1rem;
+  font-size: 1.65rem;
+  line-height: 1.15;
+  letter-spacing: 0.005em;
+  margin: 2.8rem 0 1rem;
+  padding-top: 1rem;
   border-top: 1px solid var(--gc-rule);
 }
 
 /* Function names are identifiers: mono, no code-chip background. */
 .md-typeset h3 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.05rem;
   letter-spacing: 0;
   margin: 2rem 0 0.4rem;
 }
-.md-typeset h3 code,
 .md-typeset h1 code,
-.md-typeset h2 code {
+.md-typeset h2 code,
+.md-typeset h3 code {
   background: none;
   padding: 0;
   font-size: inherit;
@@ -107,7 +189,7 @@
 
 /* ---------- Function facts ---------- */
 /* Term on the left, answer on the right. The first row is always
-   "Triggered when", so it carries the amber mark. */
+   "Triggered when", so it carries the yellow mark. */
 .md-typeset dl {
   display: grid;
   grid-template-columns: minmax(7.5rem, max-content) 1fr;
@@ -139,7 +221,7 @@
   font-weight: 500;
 }
 
-/* ---------- Variable tables ---------- */
+/* ---------- Tables ---------- */
 .md-typeset table:not([class]) {
   font-size: 0.76rem;
   box-shadow: none;
@@ -166,7 +248,7 @@
 
 /* ---------- Small screens ---------- */
 @media screen and (max-width: 44.9375em) {
-  .md-typeset h1 { font-size: 1.6rem; }
+  .md-typeset h1 { font-size: 2.2rem; }
   .md-typeset dl {
     grid-template-columns: 1fr;
     column-gap: 0;
@@ -180,4 +262,9 @@
     grid-column: 1;
     padding-top: 0.15rem;
   }
+}
+
+/* ---------- Motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; }
 }

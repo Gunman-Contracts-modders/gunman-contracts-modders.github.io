@@ -1,0 +1,7 @@
+# Order of the sidebar. "*" stands for everything not named here
+# (all class sections, sorted alphabetically), so new folders appear on their own.
+nav:
+  - index.md
+  - how-to-mod.md
+  - "*"
+  - contributing.md

@@ -27,8 +27,6 @@ jobs:
       - run: pip install -r requirements.txt
       # --strict: a broken link or bad page fails the pull request instead of the live site
       - run: mkdocs build --strict
-        env:
-          CI: "true"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
