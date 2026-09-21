@@ -6,265 +6,325 @@
 
 /* ---------- Fonts ---------- */
 @font-face {
-  font-family: "IBM Plex Sans";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url("../fonts/ibm-plex-sans-latin-400-normal.woff2") format("woff2");
+    font-family: "IBM Plex Sans";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/ibm-plex-sans-latin-400-normal.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "IBM Plex Sans";
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-  src: url("../fonts/ibm-plex-sans-latin-400-italic.woff2") format("woff2");
+    font-family: "IBM Plex Sans";
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+    src: url("../fonts/ibm-plex-sans-latin-400-italic.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "IBM Plex Sans";
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  src: url("../fonts/ibm-plex-sans-latin-500-normal.woff2") format("woff2");
+    font-family: "IBM Plex Sans";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/ibm-plex-sans-latin-500-normal.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "IBM Plex Sans";
-  font-weight: 600 700;
-  font-style: normal;
-  font-display: swap;
-  src: url("../fonts/ibm-plex-sans-latin-600-normal.woff2") format("woff2");
+    font-family: "IBM Plex Sans";
+    font-weight: 600 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/ibm-plex-sans-latin-600-normal.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "IBM Plex Mono";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url("../fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2");
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "IBM Plex Mono";
-  font-weight: 500 700;
-  font-style: normal;
-  font-display: swap;
-  src: url("../fonts/ibm-plex-mono-latin-500-normal.woff2") format("woff2");
+    font-family: "IBM Plex Mono";
+    font-weight: 500 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/ibm-plex-mono-latin-500-normal.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "Barlow Condensed";
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-  src: url("../fonts/barlow-condensed-latin-600-normal.woff2") format("woff2");
+    font-family: "Barlow Condensed";
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/barlow-condensed-latin-600-normal.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "Barlow Condensed";
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: url("../fonts/barlow-condensed-latin-700-normal.woff2") format("woff2");
+    font-family: "Barlow Condensed";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/barlow-condensed-latin-700-normal.woff2") format("woff2");
 }
 
 :root {
-  --md-text-font: "IBM Plex Sans";
-  --md-code-font: "IBM Plex Mono";
-  --gc-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+    --md-text-font: "IBM Plex Sans";
+    --md-code-font: "IBM Plex Mono";
+    --gc-display: "Barlow Condensed", "Arial Narrow", sans-serif;
 }
 
 /* ---------- Colour tokens ---------- */
 /* Dark is the default, like the game's cover. */
 [data-md-color-scheme="slate"] {
-  --md-primary-fg-color: #0e1214;
-  --md-primary-fg-color--light: #2b3437;
-  --md-primary-fg-color--dark: #090c0d;
-  --md-primary-bg-color: #f0f2f1;
-  --md-primary-bg-color--light: rgba(240, 242, 241, 0.7);
-  --md-accent-fg-color: #ffd25e;
-
-  --md-default-bg-color: #171c1e;
-  --md-default-fg-color: #e6e9e8;
-  --md-default-fg-color--light: #a8b2b4;
-  --md-default-fg-color--lighter: #6e7a7d;
-  --md-default-fg-color--lightest: #2b3437;
-  --md-typeset-color: #e6e9e8;
-  --md-typeset-a-color: #f5b921;
-
-  --md-code-bg-color: #1f2629;
-  --md-code-fg-color: #f0dda0;
-
-  --md-footer-bg-color: #0e1214;
-  --md-footer-bg-color--dark: #090c0d;
-
-  --gc-mark: #f5b921;
-  --gc-rule: #2b3437;
-  --gc-table-head: #1f2629;
+    --md-primary-fg-color: #0e1214;
+    --md-primary-fg-color--light: #2b3437;
+    --md-primary-fg-color--dark: #090c0d;
+    --md-primary-bg-color: #f0f2f1;
+    --md-primary-bg-color--light: rgba(240, 242, 241, 0.7);
+    --md-accent-fg-color: #ffd25e;
+    --md-default-bg-color: #171c1e;
+    --md-default-fg-color: #e6e9e8;
+    --md-default-fg-color--light: #a8b2b4;
+    --md-default-fg-color--lighter: #6e7a7d;
+    --md-default-fg-color--lightest: #2b3437;
+    --md-typeset-color: #e6e9e8;
+    --md-typeset-a-color: #f5b921;
+    --md-code-bg-color: #1f2629;
+    --md-code-fg-color: #f0dda0;
+    --md-footer-bg-color: #0e1214;
+    --md-footer-bg-color--dark: #090c0d;
+    --gc-mark: #f5b921;
+    --gc-rule: #2b3437;
+    --gc-table-head: #1f2629;
+    --gc-guide: #414d51;
 }
 
 [data-md-color-scheme="default"] {
-  --md-primary-fg-color: #1c2224;
-  --md-primary-fg-color--light: #4a5457;
-  --md-primary-fg-color--dark: #12171a;
-  --md-primary-bg-color: #f0f2f1;
-  --md-primary-bg-color--light: rgba(240, 242, 241, 0.7);
-  --md-accent-fg-color: #8c5c00;
-
-  --md-default-bg-color: #f3f3ef;
-  --md-default-fg-color: #1b2123;
-  --md-default-fg-color--light: #4a5457;
-  --md-default-fg-color--lighter: #8b9497;
-  --md-default-fg-color--lightest: #d8d8d0;
-  --md-typeset-color: #1b2123;
-  --md-typeset-a-color: #7a5800;
-
-  --md-code-bg-color: #e7e7e1;
-  --md-code-fg-color: #2e2a17;
-
-  --gc-mark: #e8a812;
-  --gc-rule: #d8d8d0;
-  --gc-table-head: #e9e9e2;
+    --md-primary-fg-color: #1c2224;
+    --md-primary-fg-color--light: #4a5457;
+    --md-primary-fg-color--dark: #12171a;
+    --md-primary-bg-color: #f0f2f1;
+    --md-primary-bg-color--light: rgba(240, 242, 241, 0.7);
+    --md-accent-fg-color: #8c5c00;
+    --md-default-bg-color: #f3f3ef;
+    --md-default-fg-color: #1b2123;
+    --md-default-fg-color--light: #4a5457;
+    --md-default-fg-color--lighter: #8b9497;
+    --md-default-fg-color--lightest: #d8d8d0;
+    --md-typeset-color: #1b2123;
+    --md-typeset-a-color: #7a5800;
+    --md-code-bg-color: #e7e7e1;
+    --md-code-fg-color: #2e2a17;
+    --gc-mark: #e8a812;
+    --gc-rule: #d8d8d0;
+    --gc-table-head: #e9e9e2;
+    --gc-guide: #bfc0b6;
 }
 
 /* ---------- Header ---------- */
 .md-header {
-  box-shadow: 0 2px 0 var(--gc-mark);
+    box-shadow: 0 2px 0 var(--gc-mark);
 }
+
 .md-header__title {
-  font-family: var(--gc-display);
-  font-weight: 600;
-  font-size: 1.05rem;
-  letter-spacing: 0.01em;
+    font-family: var(--gc-display);
+    font-weight: 600;
+    font-size: 1.05rem;
+    letter-spacing: 0.01em;
+}
+
+/* ---------- Sidebar navigation (desktop) ---------- */
+/* Sections (Player, Weapons ...) become small condensed headings with a rule
+   above them. Their pages are indented under a guide line, like the table of
+   contents on the right. Plain pages (Home, How to mod, Contributing) stay flat. */
+@media screen and (min-width: 76.25em) {
+    .md-sidebar--primary .md-nav--primary .md-nav__item--section {
+        margin: 0.4rem 0 0;
+        padding-top: 0.9rem;
+        border-top: 1px solid var(--gc-rule);
+    }
+
+        .md-sidebar--primary .md-nav--primary .md-nav__item--section > .md-nav__link {
+            font-family: var(--gc-display);
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.09em;
+            text-transform: uppercase;
+            color: var(--md-default-fg-color);
+        }
+
+    /* Indent the pages of a section and draw the guide line. */
+    [dir="ltr"] .md-sidebar--primary .md-nav--primary .md-nav__item--section > .md-nav {
+        margin-left: 0;
+    }
+
+        [dir="ltr"] .md-sidebar--primary .md-nav--primary .md-nav__item--section > .md-nav > .md-nav__list {
+            margin: 0.1rem 0 0.7rem 0.15rem;
+            padding: 0 0 0 0.75rem;
+            border-left: 1px solid var(--gc-guide);
+        }
+
+    /* A plain page after the last section (Contributing) gets its own rule. */
+    .md-sidebar--primary .md-nav--primary .md-nav__item--section + .md-nav__item:not(.md-nav__item--section) {
+        margin-top: 0.3rem;
+        padding-top: 0.4rem;
+        border-top: 1px solid var(--gc-rule);
+    }
 }
 
 /* ---------- Type ---------- */
 .md-typeset {
-  font-size: 0.8rem;
-  line-height: 1.7;
+    font-size: 0.8rem;
+    line-height: 1.7;
 }
 
-.md-typeset h1 {
-  font-family: var(--gc-display);
-  font-weight: 700;
-  font-size: 2.7rem;
-  line-height: 1.05;
-  letter-spacing: 0.005em;
-  color: var(--md-default-fg-color);
-  margin: 0 0 1.2rem;
-}
+    .md-typeset h1 {
+        font-family: var(--gc-display);
+        font-weight: 700;
+        font-size: 2.7rem;
+        line-height: 1.05;
+        letter-spacing: 0.005em;
+        color: var(--md-default-fg-color);
+        margin: 0 0 1.2rem;
+    }
 
-.md-typeset h2 {
-  font-family: var(--gc-display);
-  font-weight: 600;
-  font-size: 1.65rem;
-  line-height: 1.15;
-  letter-spacing: 0.005em;
-  margin: 2.8rem 0 1rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--gc-rule);
-}
+    .md-typeset h2 {
+        font-family: var(--gc-display);
+        font-weight: 600;
+        font-size: 1.65rem;
+        line-height: 1.15;
+        letter-spacing: 0.005em;
+        margin: 2.8rem 0 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--gc-rule);
+    }
 
-/* Function names are identifiers: mono, no code-chip background. */
-.md-typeset h3 {
-  font-weight: 500;
-  font-size: 1.05rem;
-  letter-spacing: 0;
-  margin: 2rem 0 0.4rem;
-}
-.md-typeset h1 code,
-.md-typeset h2 code,
-.md-typeset h3 code {
-  background: none;
-  padding: 0;
-  font-size: inherit;
-  font-weight: inherit;
-  color: inherit;
-}
+    /* Function names are identifiers: mono, no code-chip background. */
+    .md-typeset h3 {
+        font-weight: 500;
+        font-size: 1.05rem;
+        letter-spacing: 0;
+        margin: 2rem 0 0.4rem;
+    }
 
-/* The signature line right below a function name */
-.md-typeset h3 + p {
-  margin-top: 0;
-}
-.md-typeset h3 + p > code {
-  display: inline-block;
-  padding: 0.25rem 0.6rem;
-  border-radius: 2px;
-  font-size: 0.78rem;
-}
+        .md-typeset h1 code,
+        .md-typeset h2 code,
+        .md-typeset h3 code {
+            background: none;
+            padding: 0;
+            font-size: inherit;
+            font-weight: inherit;
+            color: inherit;
+        }
 
-/* ---------- Function facts ---------- */
-/* Term on the left, answer on the right. The first row is always
+        /* The signature line right below a function name */
+        .md-typeset h3 + p {
+            margin-top: 0;
+        }
+
+            .md-typeset h3 + p > code {
+                display: inline-block;
+                padding: 0.25rem 0.6rem;
+                border-radius: 2px;
+                font-size: 0.78rem;
+            }
+
+    /* ---------- Function facts ---------- */
+    /* Term on the left, answer on the right. The first row is always
    "Triggered when", so it carries the yellow mark. */
-.md-typeset dl {
-  display: grid;
-  grid-template-columns: minmax(7.5rem, max-content) 1fr;
-  column-gap: 1.5rem;
-  margin: 1.1rem 0 1.6rem;
-  border-top: 1px solid var(--gc-rule);
-}
-.md-typeset dl > dt,
-.md-typeset dl > dd {
-  margin: 0;
-  padding: 0.6rem 0;
-  border-bottom: 1px solid var(--gc-rule);
-}
-.md-typeset dl > dt {
-  grid-column: 1;
-  font-weight: 600;
-  font-style: normal;
-  color: var(--md-default-fg-color--light);
-}
-.md-typeset dl > dd {
-  grid-column: 2;
-}
-.md-typeset dl > dt:first-of-type {
-  color: var(--md-default-fg-color);
-  padding-left: 0.75rem;
-  box-shadow: inset 3px 0 0 var(--gc-mark);
-}
-.md-typeset dl > dd:first-of-type {
-  font-weight: 500;
-}
+    .md-typeset dl {
+        display: grid;
+        grid-template-columns: minmax(7.5rem, max-content) 1fr;
+        column-gap: 1.5rem;
+        margin: 1.1rem 0 1.6rem;
+        border-top: 1px solid var(--gc-rule);
+    }
 
-/* ---------- Tables ---------- */
-.md-typeset table:not([class]) {
-  font-size: 0.76rem;
-  box-shadow: none;
-  border: 1px solid var(--gc-rule);
-  border-radius: 2px;
-}
-.md-typeset table:not([class]) th {
-  background: var(--gc-table-head);
-  font-weight: 600;
-  color: var(--md-default-fg-color);
-  padding: 0.6rem 0.9rem;
-}
-.md-typeset table:not([class]) td {
-  padding: 0.6rem 0.9rem;
-  border-top: 1px solid var(--gc-rule);
-  vertical-align: top;
-}
-.md-typeset table:not([class]) tbody tr:hover {
-  background: var(--gc-table-head);
-}
-.md-typeset table:not([class]) td:first-child code {
-  white-space: nowrap;
-}
+        .md-typeset dl > dt,
+        .md-typeset dl > dd {
+            margin: 0;
+            padding: 0.6rem 0;
+            border-bottom: 1px solid var(--gc-rule);
+        }
+
+        .md-typeset dl > dt {
+            grid-column: 1;
+            font-weight: 600;
+            font-style: normal;
+            color: var(--md-default-fg-color--light);
+        }
+
+        .md-typeset dl > dd {
+            grid-column: 2;
+        }
+
+        .md-typeset dl > dt:first-of-type {
+            color: var(--md-default-fg-color);
+            padding-left: 0.75rem;
+            box-shadow: inset 3px 0 0 var(--gc-mark);
+        }
+
+        .md-typeset dl > dd:first-of-type {
+            font-weight: 500;
+        }
+
+    /* ---------- Tables ---------- */
+    .md-typeset table:not([class]) {
+        font-size: 0.76rem;
+        box-shadow: none;
+        border: 1px solid var(--gc-rule);
+        border-radius: 2px;
+    }
+
+        .md-typeset table:not([class]) th {
+            background: var(--gc-table-head);
+            font-weight: 600;
+            color: var(--md-default-fg-color);
+            padding: 0.6rem 0.9rem;
+        }
+
+        .md-typeset table:not([class]) td {
+            padding: 0.6rem 0.9rem;
+            border-top: 1px solid var(--gc-rule);
+            vertical-align: top;
+        }
+
+        .md-typeset table:not([class]) tbody tr:hover {
+            background: var(--gc-table-head);
+        }
+
+        .md-typeset table:not([class]) td:first-child code {
+            white-space: nowrap;
+        }
 
 /* ---------- Small screens ---------- */
 @media screen and (max-width: 44.9375em) {
-  .md-typeset h1 { font-size: 2.2rem; }
-  .md-typeset dl {
-    grid-template-columns: 1fr;
-    column-gap: 0;
-  }
-  .md-typeset dl > dt {
-    grid-column: 1;
-    border-bottom: 0;
-    padding-bottom: 0;
-  }
-  .md-typeset dl > dd {
-    grid-column: 1;
-    padding-top: 0.15rem;
-  }
+    .md-typeset h1 {
+        font-size: 2.2rem;
+    }
+
+    .md-typeset dl {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+    }
+
+        .md-typeset dl > dt {
+            grid-column: 1;
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .md-typeset dl > dd {
+            grid-column: 1;
+            padding-top: 0.15rem;
+        }
 }
 
 /* ---------- Motion ---------- */
 @media (prefers-reduced-motion: reduce) {
-  * { scroll-behavior: auto !important; }
+    * {
+        scroll-behavior: auto !important;
+    }
 }
