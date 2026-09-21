@@ -1,8 +1,8 @@
 site_name: Gunman Contracts Modding Notes
 site_description: Community notes on the functions found in Gunman Contracts Standalone and when they are triggered.
 # TODO: replace YOUR-ORG (and the repo name, if you pick another one)
-site_url: https://YOUR-ORG.github.io/gunman-contracts-docs/
-repo_url: https://github.com/YOUR-ORG/gunman-contracts-docs
+site_url: https://Gunman-Contracts-modders.github.io/gunman-contracts-modding-docs/
+repo_url: https://github.com/Gunman-Contracts-modders/gunman-contracts-modding-docs
 edit_uri: edit/main/docs/
 
 # No nav: pages are picked up from the folder structure automatically.
