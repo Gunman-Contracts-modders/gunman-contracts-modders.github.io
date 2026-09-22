@@ -6,7 +6,7 @@ what they do, when the game triggers them, and which variables we have used and 
 Static site built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/),
 hosted free on GitHub Pages. No server, no database: the Markdown files in `docs/` are the data.
 
-Live at: https://gunman-contracts-modders.github.io/gunman-contracts-modding-docs/
+Live at: [https://gunman-contracts-modders.github.io](https://gunman-contracts-modders.github.io)
 
 ## Set up (once)
 
