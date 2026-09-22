@@ -15,9 +15,6 @@ Breakable objects. Some of them explode when they break.
 Triggered when
 :   A breakable object shatters.
 
-Hook
-:   Postfix
-
 Usage example
 :   If it explodes, play an explosion effect. Use the slow-motion version if slow motion is forced, comes with the break, or is already running (`Time.timeScale` below 1).
 

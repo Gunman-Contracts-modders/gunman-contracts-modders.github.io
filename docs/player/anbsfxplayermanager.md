@@ -16,9 +16,6 @@ healing and slow motion.
 Triggered when
 :   The player is down to their last HP.
 
-Hook
-:   Postfix
-
 Usage example
 :   Start the heartbeat effect.
 
@@ -29,9 +26,6 @@ Usage example
 Triggered when
 :   The player is healed.
 
-Hook
-:   Postfix
-
 Usage example
 :   Stop the heartbeat effect and play a healing effect.
 
@@ -41,9 +35,6 @@ Usage example
 
 Triggered when
 :   Slow motion starts.
-
-Hook
-:   Postfix
 
 Usage example
 :   Play a slow-motion start effect.

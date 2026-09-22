@@ -16,9 +16,6 @@ the same class is used for both.
 Triggered when
 :   The countdown starts.
 
-Hook
-:   Postfix
-
 Usage example
 :   Remember that the timer is running.
 
@@ -29,9 +26,6 @@ Usage example
 Triggered when
 :   The button is pushed.
 
-Hook
-:   Postfix
-
 Usage example
 :   Remember that the timer is no longer running.
 
@@ -41,9 +35,6 @@ Usage example
 
 Triggered when
 :   Every frame.
-
-Hook
-:   Postfix
 
 Usage example
 :   While our timer is running on an active contract box, when `timeCurrent` reaches 0, play the big explosion effect.

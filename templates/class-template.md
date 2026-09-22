@@ -16,9 +16,6 @@ from a framework (e.g. HurricaneVR) instead of the game itself.
 Triggered when
 :   The moment the game calls it (player action, event, every frame ...).
 
-Hook
-:   Postfix, Prefix, or "none" if we only read from it.
-
 Parameters
 :   `parameter` (`Type`) — what it is. Only for a parameter we actually use; delete this row if the function has none worth explaining.
 

@@ -15,9 +15,6 @@ The smartphone the player wears on the wrist.
 Triggered when
 :   The player grabs the phone from the wrist.
 
-Hook
-:   Postfix
-
 Usage example
 :   Play the wrist effect.
 
@@ -27,9 +24,6 @@ Usage example
 
 Triggered when
 :   The phone goes back to the wrist.
-
-Hook
-:   Postfix
 
 Usage example
 :   Play the wrist effect.

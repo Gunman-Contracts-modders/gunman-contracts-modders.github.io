@@ -15,9 +15,6 @@ This class controls Movement Speeds and a BUNCH of other Movement stuff. Can be 
 Triggered when
 :   The moment the game calls it (player action, event, every frame ...).
 
-Hook
-:   Postfix, Prefix, or "none" if we only read from it.
-
 Usage example
 :   Make the speed while aiming faster or slower.
 

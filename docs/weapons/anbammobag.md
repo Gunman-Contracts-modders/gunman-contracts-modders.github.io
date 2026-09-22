@@ -15,9 +15,6 @@ The player's ammo bag.
 Triggered when
 :   Ammo is removed from the bag.
 
-Hook
-:   Postfix
-
 Usage example
 :   Play the ammo pouch effect.
 

@@ -16,9 +16,6 @@ Base class of the game's VR guns. It also drives the bow's flatscreen fallback, 
 Triggered when
 :   A gun fires.
 
-Hook
-:   Postfix
-
 Usage example
 :   Play recoil on the hand holding the gun.
 
@@ -32,9 +29,6 @@ Not used
 Triggered when
 :   The magazine is released from the gun.
 
-Hook
-:   Postfix
-
 Usage example
 :   Play the mag-eject effect on the hand holding the gun.
 
@@ -44,9 +38,6 @@ Usage example
 
 Triggered when
 :   Ammo is inserted into the gun.
-
-Hook
-:   Postfix
 
 Usage example
 :   Play the reload effect on the hand holding the gun. Skipped if no hand holds it.
@@ -58,9 +49,6 @@ Usage example
 Triggered when
 :   A hand grabs the gun.
 
-Hook
-:   Postfix
-
 Usage example
 :   Play a grab effect on the hand grabbing the gun.
 
@@ -70,9 +58,6 @@ Usage example
 
 Triggered when
 :   A shell is loaded into a shotgun.
-
-Hook
-:   Postfix
 
 Usage example
 :   Play the reload effect on the hand holding the gun.
@@ -84,9 +69,6 @@ Usage example
 Triggered when
 :   The cocking handle is pulled back.
 
-Hook
-:   Postfix
-
 Usage example
 :   Play the slide-back effect on the hand holding the gun.
 
@@ -96,9 +78,6 @@ Usage example
 
 Triggered when
 :   The cocking handle is released.
-
-Hook
-:   Postfix
 
 Usage example
 :   Play the slide-forward effect on the hand holding the gun.
