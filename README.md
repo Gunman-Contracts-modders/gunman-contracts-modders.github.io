@@ -1,12 +1,12 @@
 # Gunman Contracts modding notes
 
 Community documentation of the functions found in *Gunman Contracts Standalone*:
-what they do, when the game triggers them, and which variables matter.
+what they do, when the game triggers them, and which variables we have used and confirmed so far.
 
 Static site built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/),
 hosted free on GitHub Pages. No server, no database: the Markdown files in `docs/` are the data.
 
-Live at: https://gunman-contract-modders.github.io/
+Live at: https://gunman-contracts-modders.github.io/gunman-contracts-modding-docs/
 
 ## Set up (once)
 
