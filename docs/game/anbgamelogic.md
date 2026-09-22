@@ -169,7 +169,7 @@ Usage example
 :   Play the big explosion effect.
 
 
-## Variables
+## Tested class variables
 
 | Variable | Type | Meaning | Function |
 |---|---|---|---|

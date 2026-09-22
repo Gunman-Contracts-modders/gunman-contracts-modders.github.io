@@ -48,7 +48,7 @@ Hook
 Usage example
 :   While our timer is running on an active contract box, wait 1.5 seconds after `timeCurrent` reaches 0, then play the big explosion effect.
 
-## Variables
+## Tested class variables
 
 | Variable | Type | Meaning | Function |
 |---|---|---|---|

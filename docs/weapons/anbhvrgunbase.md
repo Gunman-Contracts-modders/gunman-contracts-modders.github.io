@@ -103,7 +103,7 @@ Hook
 Usage example
 :   Play the slide-forward effect on the hand holding the gun.
 
-## Variables
+## Tested class variables
 
 | Variable | Type | Meaning | Function |
 |---|---|---|---|

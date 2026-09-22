@@ -24,6 +24,6 @@ Usage example
 Not used
 :   `ammo`, `removeVal`
 
-## Variables
+## Tested class variables
 
 The mod reads no variables in this function.

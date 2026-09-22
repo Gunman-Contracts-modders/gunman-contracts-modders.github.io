@@ -48,6 +48,6 @@ Hook
 Usage example
 :   Play a slow-motion start effect.
 
-## Variables
+## Tested class variables
 
 The mod reads no variables in these functions.

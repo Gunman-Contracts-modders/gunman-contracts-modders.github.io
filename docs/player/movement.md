@@ -24,7 +24,7 @@ Usage example
 Not used
 :   Parameters or fields we saw but did not need. Delete this row if empty.
 
-## Variables
+## Tested class variables
 
 | Variable | Type | Meaning | Function |
 |---|---|---|---|

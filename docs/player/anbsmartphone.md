@@ -34,6 +34,6 @@ Hook
 Usage example
 :   Play the wrist effect on the left side.
 
-## Variables
+## Tested class variables
 
 The mod reads no variables in these functions.
