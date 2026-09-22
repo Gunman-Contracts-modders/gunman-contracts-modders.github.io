@@ -18,7 +18,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   If it explodes, play an explosion effect. Use the slow-motion version if slow motion is forced, comes with the break, or is already running (`Time.timeScale` below 1).
 
 ## Variables

@@ -19,7 +19,7 @@ Triggered when
 Hook
 :   Postfix, Prefix, or "none" if we only read from it.
 
-We use it to
+Usage example
 :   What our mod does in response. One line.
 
 Not used

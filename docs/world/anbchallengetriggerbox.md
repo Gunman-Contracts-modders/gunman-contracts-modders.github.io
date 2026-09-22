@@ -19,7 +19,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Remember that the timer is running.
 
 ### `ButtonPushed`
@@ -32,7 +32,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Remember that the timer is no longer running.
 
 ### `Update`
@@ -45,7 +45,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   While our timer is running on an active contract box, wait 1.5 seconds after `timeCurrent` reaches 0, then play the big explosion effect.
 
 ## Variables

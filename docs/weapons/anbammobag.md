@@ -18,7 +18,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Play the ammo pouch effect.
 
 Not used

@@ -18,7 +18,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Play the wrist effect on the left side.
 
 ### `retractToWrist`
@@ -31,7 +31,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Play the wrist effect on the left side.
 
 ## Variables

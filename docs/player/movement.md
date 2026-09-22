@@ -18,7 +18,7 @@ Triggered when
 Hook
 :   Postfix, Prefix, or "none" if we only read from it.
 
-We use it to
+Usage example
 :   Make the speed while aiming faster or slower.
 
 Not used

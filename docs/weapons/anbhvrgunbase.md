@@ -19,7 +19,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Play recoil on the hand holding the gun. It counts as two-handed if the other hand holds a second grip point (foregrip, rail).
 
 Not used
@@ -35,7 +35,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Play the mag-eject effect on the hand holding the gun.
 
 ### `OnAmmoSocketed`
@@ -48,7 +48,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Play the reload effect on the hand holding the gun. Skipped if no hand holds it.
 
 ### `OnHandGrabbed`
@@ -61,7 +61,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Play the mag-eject effect on the hand holding the gun, as grab feedback.
 
 ### `AddShotgunShell`
@@ -74,7 +74,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Play the reload effect on the hand holding the gun.
 
 ### `OnCockingHandleEjected`
@@ -87,7 +87,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Play the slide-back effect on the hand holding the gun.
 
 ### `OnCockingHandleReleased`
@@ -100,7 +100,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Play the slide-forward effect on the hand holding the gun.
 
 ## Variables

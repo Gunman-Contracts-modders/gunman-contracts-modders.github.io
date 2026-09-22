@@ -19,7 +19,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Play an impact effect from the direction of the attacker, seen from the player's camera. Skipped when there is no attacker.
 
 Not used
@@ -35,7 +35,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Stop the heartbeat effect.
 
 ### `endRun`
@@ -48,7 +48,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Stop the heartbeat effect.
 
 ### `holsterGun`
@@ -61,7 +61,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Play the holster-in effect on the matching side, hip or back.
 
 ### `unholsterGun`
@@ -74,7 +74,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Play the holster-out effect on the matching side, hip or back.
 
 ### `holsterKnife`
@@ -87,7 +87,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Play the holster-in effect on the matching side, hip or back.
 
 ### `unholsterKnife`
@@ -100,7 +100,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Play the holster-out effect on the matching side, hip or back.
 
 ### `creditAmmo`
@@ -113,7 +113,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Play the ammo pouch effect.
 
 ### `substractAmmo`
@@ -126,7 +126,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Play the ammo pouch effect.
 
 ### `collectibleCollected`
@@ -139,7 +139,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Play the ammo pouch effect.
 
 ### `collectCoinWallet`
@@ -152,7 +152,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Play the ammo pouch effect.
 
 ### `DeathByRook`
@@ -165,7 +165,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Play the big explosion effect.
 
 

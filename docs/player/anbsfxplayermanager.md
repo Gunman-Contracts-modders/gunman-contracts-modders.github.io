@@ -19,7 +19,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Start the heartbeat effect.
 
 ### `Heal`
@@ -32,7 +32,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Stop the heartbeat effect and play a healing effect.
 
 ### `StartSlowmotion`
@@ -45,7 +45,7 @@ Triggered when
 Hook
 :   Postfix
 
-We use it to
+Usage example
 :   Play a slow-motion start effect.
 
 ## Variables
