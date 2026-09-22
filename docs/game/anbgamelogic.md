@@ -14,10 +14,13 @@ dying, holstering, ammo, pickups) run through it. Check here first.
 `HurtPlayer(string type, float dmg, ANBBasicNPC attacker)`
 
 Triggered when
-:   The player is hurt. `attacker` is the NPC that did it, or empty.
+:   The player is hurt.
 
 Hook
 :   Postfix
+
+Parameters
+:   `attacker` (`ANBBasicNPC`) — the NPC that did it, or empty. We read `attacker.transform.position` to get the hit direction.
 
 Usage example
 :   Play an impact effect from the direction of the attacker.
@@ -61,6 +64,9 @@ Triggered when
 Hook
 :   Postfix
 
+Parameters
+:   `side` (`string`) — holster slot. We check for `right`, `backRight` and `backLeft`; anything else counts as the left hip.
+
 Usage example
 :   Play the holster-in effect on the matching side, hip or back.
 
@@ -73,6 +79,9 @@ Triggered when
 
 Hook
 :   Postfix
+
+Parameters
+:   `side` (`string`) — holster slot. We check for `right`, `backRight` and `backLeft`; anything else counts as the left hip.
 
 Usage example
 :   Play the holster-out effect on the matching side, hip or back.
@@ -87,6 +96,9 @@ Triggered when
 Hook
 :   Postfix
 
+Parameters
+:   `side` (`string`) — holster slot. We check for `right`, `backRight` and `backLeft`; anything else counts as the left hip.
+
 Usage example
 :   Play the holster-in effect on the matching side, hip or back.
 
@@ -99,6 +111,9 @@ Triggered when
 
 Hook
 :   Postfix
+
+Parameters
+:   `side` (`string`) — holster slot. We check for `right`, `backRight` and `backLeft`; anything else counts as the left hip.
 
 Usage example
 :   Play the holster-out effect on the matching side, hip or back.
@@ -171,8 +186,4 @@ Usage example
 
 ## Tested class variables
 
-| Variable | Type | Meaning | Function |
-|---|---|---|---|
-| `attacker` | `ANBBasicNPC` | The NPC that hurt the player. Empty if there is none. | `HurtPlayer` |
-| `attacker.transform.position` | `Vector3` | Where the attacker stands. Gives the hit direction. | `HurtPlayer` |
-| `side` | `string` | Holster slot. We check for `right`, `backRight` and `backLeft`; anything else counts as the left hip. | `holsterGun`, `unholsterGun`, `holsterKnife`, `unholsterKnife` |
+The mod reads no variables in these functions.
