@@ -4,7 +4,7 @@ Mods for this game run on MelonLoader. The short version:
 
 ## 1. Install MelonLoader
 
-Download the installer from the [MelonLoader releases](https://github.com/LavaGang/MelonLoader/releases), point it at the game's `.exe` and install. Start the game once. On the first start, MelonLoader generates the readable game libraries for you (usually in the game's `MelonLoader/Il2CppAssemblies` folder). You will need them in step 4.
+Download the installer (and if needed requirements) from the [MelonLoader website](https://melonwiki.xyz/#/?id=requirements), point it at the game and install. Start the game once. On the first start, MelonLoader generates the readable game libraries for you (usually in the game's `MelonLoader/Il2CppAssemblies` folder). You will need them in step 4.
 
 ## 2. Create your mod
 
@@ -23,6 +23,6 @@ Open the generated libraries in a decompiler to browse classes and functions:
 - [dnSpy](https://github.com/dnSpyEx/dnSpy) (community-maintained fork), free
 - [dotPeek](https://www.jetbrains.com/decompiler/) by JetBrains, free
 
-Search for words like `Fire`, `Damage` or `Grab` to find candidates, then hook them from your mod.
+Search for words like `Fire`, `Damage` or `Grab` to find candidates, then hook them from your mod. Some variables and parameters already used and confirmed are documented here, but there are certainly a lot more available in the libraries.
 
 Found something useful? Add it to these notes: see [Contributing](contributing.md).

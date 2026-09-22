@@ -1,5 +1,5 @@
 ---
-description: Trigger box for challenges. On contract boxes it runs a countdown, which we treat as a bomb timer.
+description: Rook bomb. Runs a countdown and explodes.
 ---
 
 # ANBChallengeTriggerbox
@@ -46,7 +46,7 @@ Hook
 :   Postfix
 
 Usage example
-:   While our timer is running on an active contract box, wait 1.5 seconds after `timeCurrent` reaches 0, then play the big explosion effect.
+:   While our timer is running on an active contract box, when `timeCurrent` reaches 0, play the big explosion effect.
 
 ## Tested class variables
 

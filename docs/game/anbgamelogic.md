@@ -20,7 +20,7 @@ Hook
 :   Postfix
 
 Usage example
-:   Play an impact effect from the direction of the attacker, seen from the player's camera. Skipped when there is no attacker.
+:   Play an impact effect from the direction of the attacker.
 
 Not used
 :   `type`, `dmg`

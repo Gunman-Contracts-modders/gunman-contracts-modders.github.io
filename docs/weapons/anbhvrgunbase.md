@@ -20,7 +20,7 @@ Hook
 :   Postfix
 
 Usage example
-:   Play recoil on the hand holding the gun. It counts as two-handed if the other hand holds a second grip point (foregrip, rail).
+:   Play recoil on the hand holding the gun.
 
 Not used
 :   `direction`
@@ -62,7 +62,7 @@ Hook
 :   Postfix
 
 Usage example
-:   Play the mag-eject effect on the hand holding the gun, as grab feedback.
+:   Play a grab effect on the hand grabbing the gun.
 
 ### `AddShotgunShell`
 

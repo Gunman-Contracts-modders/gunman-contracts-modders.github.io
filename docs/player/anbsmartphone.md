@@ -19,7 +19,7 @@ Hook
 :   Postfix
 
 Usage example
-:   Play the wrist effect on the left side.
+:   Play the wrist effect.
 
 ### `retractToWrist`
 
@@ -32,7 +32,7 @@ Hook
 :   Postfix
 
 Usage example
-:   Play the wrist effect on the left side.
+:   Play the wrist effect.
 
 ## Tested class variables
 
