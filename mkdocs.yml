@@ -2,8 +2,8 @@ site_name: Gunman Contracts Modding Notes
 site_description: Community notes on the functions found in Gunman Contracts Standalone and when they are triggered.
 # The repo must be named "gunman-contract-modders.github.io" so the site lands on the
 # organisation's root address, without a repo name at the end.
-site_url: https://gunman-contracts-modders.github.io/gunman-contracts-modding-docs/
-repo_url: https://github.com/Gunman-Contracts-modders/gunman-contracts-modding-docs
+site_url: https://gunman-contracts-modders.github.io/
+repo_url: https://github.com/Gunman-Contracts-modders/gunman-contracts-modders.github.io
 edit_uri: edit/main/docs/
 
 # No nav here: pages are picked up from the folder structure automatically.
